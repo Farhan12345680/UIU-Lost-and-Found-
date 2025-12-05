@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      background: #e5ddd5;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    .chat-container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 300px;
+      background: #f0f0f0;
+      border-right: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar-header {
+      padding: 15px;
+      background: #ededed;
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .contacts {
+      flex: 1;
+      overflow-y: auto;
+    }
+
+    .contact {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .contact:hover {
+      background: #e2e2e2;
+    }
+
+    .contact img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .contact-info {
+      flex: 1;
+    }
+
+    .contact-name {
+      font-weight: 600;
+    }
+
+    .contact-last-message {
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    .chat-main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+    }
+
+    .chat-header {
+      padding: 15px;
+      border-bottom: 1px solid #ccc;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    .chat-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .chat-body {
+      flex: 1;
+      padding: 15px;
+      overflow-y: auto;
+      background: #e5ddd5;
+    }
+
+    .message {
+      max-width: 70%;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      border-radius: 20px;
+      position: relative;
+      clear: both;
+      word-wrap: break-word;
+    }
+
+    .message.sent {
+      background: #dcf8c6;
+      float: right;
+      text-align: right;
+    }
+
+    .message.received {
+      background: #fff;
+      float: left;
+      text-align: left;
+    }
+
+    .chat-footer {
+      padding: 10px;
+      border-top: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      background: #f0f0f0;
+    }
+
+    .chat-footer input {
+      flex: 1;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      padding: 8px 15px;
+      margin-right: 10px;
+    }
+
+    .chat-footer button {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      background: #1a73e8;
+      border: none;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<div class="chat-container">
+
+  <div class="sidebar">
+    <div class="sidebar-header">Chats</div>
+    <div class="contacts">
+      <div class="contact">
+        <img src="../images/lost.png" alt="User">
+        <div class="contact-info">
+          <div class="contact-name">Alice</div>
+          <div class="contact-last-message">Hey, how are you?</div>
+        </div>
+      </div>
+      <div class="contact">
+        <img src="../images/lost.png" alt="User">
+        <div class="contact-info">
+          <div class="contact-name">Bob</div>
+          <div class="contact-last-message">Let's meet tomorrow</div>
+        </div>
+      </div>
+      <div class="contact">
+        <img src="../images/lost.png" alt="User">
+        <div class="contact-info">
+          <div class="contact-name">Charlie</div>
+          <div class="contact-last-message">Can you send me the files?</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chat-main">
+    <div class="chat-header">
+      <img src="../images/lost.png" alt="User">
+      <span>Chat with Alice</span>
+    </div>
+    <div class="chat-body">
+      <div class="message received">Hi! How are you?</div>
+      <div class="message sent">I'm good, thanks! How about you?</div>
+      <div class="message received">Doing great. Are we meeting today?</div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" placeholder="Type a message">
+      <button>&#9658;</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

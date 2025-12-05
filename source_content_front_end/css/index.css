@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:#f3e5f5;
+    overflow: hidden;
+    height: 100vh;
+
+}
+#navbar{
+    background-color: #4a148c;
+    color: white;
+    font-family: "TASA Orbiter", sans-serif;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow:
+  0px 2px 1px -1px rgba(0,0,0,0.20),
+  0px 1px 1px 0px rgba(0,0,0,0.14),
+  0px 1px 3px 0px rgba(0,0,0,0.12);
+
+}
+#navbar a{
+    color: #f3e5f5;
+        font-family: "TASA Orbiter", sans-serif;;
+    text-decoration: none;
+}
+
+
+p{
+    width: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#logoHolder{
+
+    width: 300px;
+    display: inline-block;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+}
+#logoHolder  img{
+    width: 50px;
+
+    display: inline-block;
+    object-fit: cover;
+    text-align: center;
+
+}
+
+/*     user profile card   */
+
+#UserProfile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: inherit;
+    width: 300px;
+}
+
+#UserProfileImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+        display: inline;
+
+}
+
+#UserProfileText{
+    display: flex;
+    justify-content: flex-end;
+
+    flex-direction: column;
+    font-size: 15px;
+    width: 200px;
+}
+
+#UserProfileText p{
+    border: 1px solid black;
+    max-width: 200px;
+    min-width: 200px;
+    overflow: hidden;
+    margin-right: 5px;
+}

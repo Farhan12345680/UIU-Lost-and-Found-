@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Items</title>
+    <link rel="icon" type="image/png" href="../images/lost.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        #navbar {
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+        #logoHolder {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        #logoHolder img {
+            width: 40px;
+            margin-right: 10px;
+        }
+        .card-img-top {
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+<header id="navbar">
+    <div id="logoHolder">
+        <img src="../images/lost.png" alt="Logo">
+        Lost and Found
+    </div>
+    <div>
+        <a href="../index.html">Home</a>
+        <a href="profile.html">Profile</a>
+    </div>
+</header>
+<div class="container my-5">
+    <h2 class="mb-4">Lost Items</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="../images/lost.png" class="card-img-top" alt="Lost Item 1">
+                <div class="card-body">
+                    <h5 class="card-title">Black Wallet</h5>
+                    <p class="card-text">Lost near City Park on 4th Dec.</p>
+                    <p class="text-muted">Contact: 017xxxxxxx</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="../images/lost.png" class="card-img-top" alt="Lost Item 2">
+                <div class="card-body">
+                    <h5 class="card-title">Red Backpack</h5>
+                    <p class="card-text">Lost at University Library on 3rd Dec.</p>
+                    <p class="text-muted">Contact: 018xxxxxxx</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="../images/lost.png" class="card-img-top" alt="Lost Item 3">
+                <div class="card-body">
+                    <h5 class="card-title">Silver Ring</h5>
+                    <p class="card-text">Lost near Main Street on 2nd Dec.</p>
+                    <p class="text-muted">Contact: 019xxxxxxx</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
